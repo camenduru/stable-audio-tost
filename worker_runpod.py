@@ -48,6 +48,9 @@ def generate(input):
     )
     output = rearrange(output, "b d n -> d (b n)")
     output = output.to(torch.float32).div(torch.max(torch.abs(output))).clamp(-1, 1).mul(32767).to(torch.int16).cpu()
+    max_length = sample_rate * seconds_total
+    if output.shape[1] > max_length:
+        output = output[:, :max_length]
     torchaudio.save("/content/output.wav", output, sample_rate)
 
     result = "/content/output.wav"
