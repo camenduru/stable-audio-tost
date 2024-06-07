@@ -1,0 +1,109 @@
+{
+    "$schema": "http://json-schema.org/draft-04/hyper-schema#",
+    "type": "object",
+    "properties": {
+      "readme": {
+        "type": "string",
+        "title": "Stable Audio Open v1.0",
+        "author": "Stable Audio Team",
+        "code": "https://github.com/Stability-AI/stable-audio-tools",
+        "page": "https://stability.ai/news/introducing-stable-audio-open",
+        "jupyter": "https://github.com/camenduru/stable-audio-jupyter",
+        "post": "https://x.com/camenduru/status/1798425207863910408",
+        "tags": [
+          "Text to Audio"
+        ],
+        "widget": "readme"
+      },
+      "prompt": {
+        "type": "string",
+        "description": "Prompt"
+      },
+      "seconds_start": {
+        "type": "integer",
+        "description": "Seconds Start"
+      },
+      "seconds_total": {
+        "type": "integer",
+        "description": "Seconds Total"
+      },
+      "steps": {
+        "type": "integer",
+        "description": "Steps"
+      },
+      "cfg_scale": {
+        "type": "number",
+        "description": "CFG Scale"
+      },
+      "sigma_min": {
+        "type": "number",
+        "description": "Sigma Min"
+      },
+      "sigma_max": {
+        "type": "number",
+        "description": "Sigma Max"
+      },
+      "sampler_type": {
+        "type": "string",
+        "widget": "select",
+        "description": "Sampler Name",
+        "oneOf": [
+          {
+            "description": "dpmpp-2m-sde",
+            "enum": [
+              "dpmpp-2m-sde"
+            ]
+          },
+          {
+            "description": "dpmpp-3m-sde",
+            "enum": [
+              "dpmpp-3m-sde"
+            ]
+          },
+          {
+            "description": "k-heun",
+            "enum": [
+              "k-heun"
+            ]
+          },
+          {
+            "description": "k-lms",
+            "enum": [
+              "k-lms"
+            ]
+          },
+          {
+            "description": "k-dpmpp-2s-ancestral",
+            "enum": [
+              "k-dpmpp-2s-ancestral"
+            ]
+          },
+          {
+            "description": "dpm_2_ancestral",
+            "enum": [
+              "dpm_2_ancestral"
+            ]
+          },
+          {
+            "description": "k-dpm-2",
+            "enum": [
+              "k-dpm-2"
+            ]
+          },
+          {
+            "description": "k-dpm-fast",
+            "enum": [
+              "k-dpm-fast"
+            ]
+          }
+        ],
+        "default": "dpmpp-3m-sde"
+      }
+    },
+    "buttons": [
+      {
+        "id": "enter",
+        "label": "🥪 Enter"
+      }
+    ]
+  }
