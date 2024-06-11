@@ -17,7 +17,8 @@
       },
       "prompt": {
         "type": "string",
-        "description": "Prompt"
+        "description": "Prompt",
+        "widget": "textarea"
       },
       "seconds_start": {
         "type": "integer",
