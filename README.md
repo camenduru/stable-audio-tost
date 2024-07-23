@@ -8,6 +8,9 @@ https://tost.ai
 ### 🧬 Code
 https://github.com/Stability-AI/stable-audio-tools <br />
 
+### 📄 Paper
+https://arxiv.org/abs/2407.14358 <br />
+
 ### 🌐 Page
 https://stability.ai/news/introducing-stable-audio-open <br />
 
