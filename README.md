@@ -15,4 +15,4 @@ https://arxiv.org/abs/2407.14358 <br />
 https://stability.ai/news/introducing-stable-audio-open <br />
 
 ### 🏢 Sponsor
-https://runpod.io
+[https://runpod.io](https://runpod.io?ref=iqi9iy8y)
